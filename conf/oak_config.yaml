@@ -1,0 +1,14 @@
+# OAK adapter configuration for CURIE verification.
+#
+# Each prefix maps to an OAK adapter specification.
+# The sqlite:obo:X format downloads and caches the OBO Foundry SQLite
+# database on first use (~/.data/oaklib/).
+
+ontology_adapters:
+  CHEBI: sqlite:obo:chebi
+  GO: sqlite:obo:go
+  MICRO: sqlite:obo:micro
+  OMP: sqlite:obo:omp
+  FOODON: sqlite:obo:foodon
+  ENVO: sqlite:obo:envo
+  PATO: sqlite:obo:pato

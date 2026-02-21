@@ -1,0 +1,70 @@
+[project]
+name = "microbial-trait-mappings"
+version = "0.1.0"
+description = "Curated string-to-CURIE mappings and verification tools for microbial trait labels"
+authors = [
+    {name = "Mark Andrew Miller", email = "mam@lbl.gov"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["ontology", "microbiology", "mappings", "chebi", "obo", "curies"]
+license = {text = "CC-BY-4.0"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "click>=8.1.0",
+    "oaklib>=0.6.23",
+    "pandas>=2.0.0",
+    "pyyaml>=6.0",
+    "requests>=2.31.0",
+    "rich>=13.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/turbomam/microbial-trait-mappings"
+Repository = "https://github.com/turbomam/microbial-trait-mappings"
+Issues = "https://github.com/turbomam/microbial-trait-mappings/issues"
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+    "pytest>=8.0.0",
+    "types-PyYAML>=6.0.12",
+    "types-requests>=2.31.0",
+]
+validator = [
+    "linkml-term-validator>=0.2.1",
+]
+
+[project.scripts]
+mtm-normalize = "microbial_trait_mappings.cli:normalize_cmd"
+mtm-build-schema = "microbial_trait_mappings.cli:build_schema_cmd"
+mtm-verify = "microbial_trait_mappings.cli:verify_cmd"
+mtm-validate = "microbial_trait_mappings.cli:validate_cmd"
+mtm-audit = "microbial_trait_mappings.cli:audit_cmd"
+mtm-sri-normalize = "microbial_trait_mappings.cli:sri_normalize_cmd"
+
+[tool.hatch.build.targets.wheel]
+packages = ["microbial_trait_mappings"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
