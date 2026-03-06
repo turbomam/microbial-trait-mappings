@@ -1,1 +1,2 @@
 subject_label	rejected_object_id	rejected_object_label	correct_object_id	correct_object_label	rejection_reason	provenance	reported_date	reporter
+nitrification	GO:0019329	ammonia oxidation to nitrite	GO:0019329	ammonia oxidation to nitrite	Not truly rejected; closeMatch because nitrification is broader (includes nitrite to nitrate step GO:0019332)	metatraits analysis	2026-03-06	turbomam

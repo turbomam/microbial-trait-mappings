@@ -1,2 +1,2 @@
 subject_label	rejected_object_id	rejected_object_label	correct_object_id	correct_object_label	rejection_reason	provenance	reported_date	reporter
-casamino acids	CHEBI:78020	heptacosanoate	MICRO:0000184	casamino acids	LLM-hallucinated CURIE; CHEBI:78020 is a C27 fatty acid anion (formula C27H53O2), not a protein hydrolysate. Casamino acids is a complex biological mixture with no CHEBI representation.	CultureBotAI/MicroMediaParam commit f02b23c1 (2025-10-29), propagated to kg-microbe MediaDive transform	2026-02-19	turbomam
+produces: ethanol	CHEBI:78020	heptacosanoate	CHEBI:16236	ethanol	LLM hallucinated CURIE; heptacosanoate is unrelated to ethanol	CultureBotAI/MicroMediaParam	2026-02-19	turbomam
