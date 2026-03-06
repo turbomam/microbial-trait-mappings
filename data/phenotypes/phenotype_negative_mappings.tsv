@@ -1,1 +1,2 @@
 subject_label	rejected_object_id	rejected_object_label	correct_object_id	correct_object_label	rejection_reason	provenance	reported_date	reporter
+sporulation	METPO:1000615	non-endospore-forming	METPO:1000614	endospore-forming	Sporulation implies endospore-forming, not non-endospore-forming; antonym confusion	metatraits analysis	2026-03-06	turbomam
