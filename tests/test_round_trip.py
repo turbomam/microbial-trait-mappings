@@ -202,6 +202,5 @@ class TestCollapseDetection:
         row = matches.iloc[0]
         pred = _resolve_biolink_predicate(row["subject_label"], row["notes"])
         assert pred != "biolink:has_phenotype", (
-            "'produces: ethanol' resolved to biolink:has_phenotype — "
-            "this is the exact bug in kg-microbe PR #490"
+            "'produces: ethanol' resolved to biolink:has_phenotype — this is the exact bug in kg-microbe PR #490"
         )
