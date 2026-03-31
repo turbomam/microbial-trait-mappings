@@ -54,7 +54,7 @@ jobs:
         run: |
           mkdir -p generated
           uv run mtm-build-schema --input-dir data/ --output generated/validation_schema.yaml
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: validation-schema
           path: generated/validation_schema.yaml
