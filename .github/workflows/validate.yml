@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v7
         with:
           version: "latest"
       - run: uv sync --dev
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v7
         with:
           version: "latest"
       - run: uv sync --dev
@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v7
         with:
           version: "latest"
       - run: uv sync
@@ -46,7 +46,7 @@ jobs:
     needs: [validate-schemas]
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v7
         with:
           version: "latest"
       - run: uv sync
@@ -66,7 +66,7 @@ jobs:
   #   needs: [build-schema]
   #   steps:
   #     - uses: actions/checkout@v4
-  #     - uses: astral-sh/setup-uv@v4
+  #     - uses: astral-sh/setup-uv@v7
   #       with:
   #         version: "latest"
   #     - run: uv sync
