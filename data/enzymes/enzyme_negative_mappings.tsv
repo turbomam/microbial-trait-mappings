@@ -1,1 +1,2 @@
 subject_label	rejected_object_id	rejected_object_label	correct_object_id	correct_object_label	rejection_reason	provenance	reported_date	reporter
+enzyme activity: catalase (EC1.11.1.6)	GO:0004096	catalase activity	EC:1.11.1.6	catalase	GO MF term is valid but EC CURIE preferred when EC number is in the trait name	kg-microbe convention	2026-03-06	turbomam
