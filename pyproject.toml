@@ -36,7 +36,7 @@ Issues = "https://github.com/turbomam/microbial-trait-mappings/issues"
 dev = [
     "ruff>=0.4.0",
     "mypy>=1.10.0",
-    "pytest>=8.0.0",
+    "pytest>=9.0.3",
     "types-PyYAML>=6.0.12",
     "types-requests>=2.31.0",
 ]
